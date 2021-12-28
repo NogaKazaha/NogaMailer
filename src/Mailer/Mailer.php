@@ -50,6 +50,9 @@ class Mailer implements MailerTransportInterface
     $transport = (new Swift_SmtpTransport($smtp, $port, $encryption))
       ->setUsername($email)
       ->setPassword($password);
+    $transport->setStreamOptions([
+      'ssl' => ['allow_self_signed' => true, 'verify_peer' => false, 'verify_peer_name' => false]
+    ]);
     $mailer = new Swift_Mailer($transport);
     $message = (new Swift_Message($title))
       ->setContentType("text/html")
