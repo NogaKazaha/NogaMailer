@@ -1,0 +1,19 @@
+{
+  "name": "nogakazaha/mailer",
+  "description": "Implementation of mailer using swiftmailer and monolog",
+  "autoload": {
+      "psr-4": {
+          "NogaMailer\\": "src/"
+      }
+  },
+  "authors": [
+      {
+          "name": "Oleg Savich",
+          "email": "oleg.savich2001@gmail.com"
+      }
+  ],
+  "require": {
+      "swiftmailer/swiftmailer": "^6.0",
+      "monolog/monolog": "^2.3"
+  }
+}
