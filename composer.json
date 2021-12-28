@@ -1,5 +1,5 @@
 {
-  "name": "nogakazaha/mailer",
+  "name": "nogamailer/nogamailer",
   "description": "Implementation of mailer using swiftmailer and monolog",
   "autoload": {
       "psr-4": {
