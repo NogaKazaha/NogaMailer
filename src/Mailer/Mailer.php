@@ -54,7 +54,7 @@ class Mailer implements MailerTransportInterface
     $message = (new Swift_Message($title))
       ->setContentType("text/html")
       ->setFrom([$email => $username])
-      ->setTo([$recipientMail => "$recipient"])
+      ->setTo([$mail => "$reciver"])
       ->setBody("$body", 'text/html');
     try {
       (bool)$result = $mailer->send($message);
